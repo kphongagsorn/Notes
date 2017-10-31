@@ -12,3 +12,7 @@ if lfi is successful
 3)
 On attacker machine:
 set up listener and catch connection
+
+
+ref:
+https://pen-testing.sans.org/blog/2013/05/06/netcat-without-e-no-problem
