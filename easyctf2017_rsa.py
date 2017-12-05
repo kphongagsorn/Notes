@@ -1,4 +1,3 @@
-rsa1.py
 #!/usr/bin/env python
 # install libnum:
 # apt-get install openssl
