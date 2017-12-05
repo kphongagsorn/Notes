@@ -1,5 +1,3 @@
-#substitution_cipher.py
-# crikey ctf
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import random
