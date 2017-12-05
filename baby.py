@@ -1,3 +1,7 @@
+# simple buffer overflow
+#
+#
+
 from pwn import *
 
 #context(arch = 'i386', os = 'linux', endian = 'little', word_size = 32, log_level = 'debug')
