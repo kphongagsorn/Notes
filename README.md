@@ -1,2 +1,2 @@
 # Notes
-notes
+色々
