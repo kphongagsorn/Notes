@@ -1,5 +1,8 @@
 #!/usr/bin/python
 
+#reverse and hex a string
+
+
 import sys
 
 input = sys.argv[1]
