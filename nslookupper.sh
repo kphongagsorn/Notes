@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # get ips from list of hostnames
-# need to clean up output
+# need to clean up error message
 
-for ip in `cat ./hostnames.txt`;
+while read ip;
 do
-    printf "%-4s", $ip
-    nslookup $ip | awk -F"=" '/name/{print$2}'
-    echo ""
-done > ips.txt
+    #printf "%-4s", $ip
+    nslookup $ip | grep -i non-authoritative -A 2 | grep -i address | cut -f 2 -d ":"
+done < hostnames.txt
+print "done!"
