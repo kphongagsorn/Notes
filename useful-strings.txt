@@ -1,1 +1,3 @@
 cat mimikatz-lsass-dump.txt | grep -i username | tr -s " " | cut -d ":" -f 2 > mimikatz-usernames-only.txt
+
+grep -ir "addattachment" 2>/dev/null
