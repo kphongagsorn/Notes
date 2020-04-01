@@ -1,0 +1,2 @@
+//expand pkg
+pkgutil –expand ~/Downloads/zoomusInstaller.pkg ~/Downloads/zoomusInstaller-expanded.pkg
