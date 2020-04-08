@@ -1,0 +1,15 @@
+Windows 10
+
+Firefox
+"C:\Users\Your User Name\AppData\Roaming\Mozilla\Firefox\Profiles"
+
+Chrome
+"C:\Users\Your User Name\AppData\Local\Google\Chrome\User Data\Default"
+
+Edge
+"C:\Users\Your User Name\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\AC\MicrosoftEdge\Cookies"
+"C:\Users\Your User Name\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\AC\#!001\MicrosoftEdge\Cookies"
+"C:\Users\Your User Name\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\AC\#!002\MicrosoftEdge\Cookies"
+
+IE
+"C:\Users\Your User Name\AppData\Local\Microsoft\Windows\INetCookies"
