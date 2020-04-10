@@ -1,0 +1,8 @@
+edit /etc/proxychains.conf
+add line:
+socks4 TEAMSERVER-IP SOCKS-PROXY-PORT
+
+On terminal run:
+proxychains YOUR-COMMAND
+
+eg proxychains ssh admin@target-ip-via-proxy
