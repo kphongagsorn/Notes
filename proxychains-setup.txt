@@ -1,3 +1,5 @@
+ref: https://www.youtube.com/watch?time_continue=134&v=PKxxnIutatA&feature=emb_logo
+
 edit /etc/proxychains.conf
 add line:
 socks4 TEAMSERVER-IP SOCKS-PROXY-PORT
