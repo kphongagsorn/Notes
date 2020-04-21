@@ -3,3 +3,5 @@ cat mimikatz-lsass-dump.txt | grep -i username | tr -s " " | cut -d ":" -f 2 > m
 grep -ir "addattachment" 2>/dev/null
 
 find /var/www/html/ -type d -perm -o+w
+
+2to3 file.py | python3 -c -
