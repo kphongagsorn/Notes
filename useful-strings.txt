@@ -5,3 +5,6 @@ grep -ir "addattachment" 2>/dev/null
 find /var/www/html/ -type d -perm -o+w
 
 2to3 file.py | python3 -c -
+
+//gdb run python print and feed output to binary
+r <<< $(python -c "print '\x90'*52")
