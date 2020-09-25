@@ -1,3 +1,2 @@
 runas /netonly /user:DOMAIN\USER cmd
-
 dir \\IP-ADDRESSS-OR-HOST\C$
