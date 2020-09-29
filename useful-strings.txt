@@ -3,7 +3,6 @@ screen -S nmapr-01 -d -m nmap -Pn -n -sS -p 21-23,25,53,111,137,139,445,80,443,8
 
 mount -o username=USERNAME //SHARE-IP-ADDRESS/share /mnt/share/
 
-
 cat mimikatz-lsass-dump.txt | grep -i username | tr -s " " | cut -d ":" -f 2 > mimikatz-usernames-only.txt
 
 grep -ir "addattachment" 2>/dev/null
