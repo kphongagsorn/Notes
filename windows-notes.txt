@@ -1,2 +1,7 @@
 runas /netonly /user:DOMAIN\USER cmd
 dir \\IP-ADDRESSS-OR-HOST\C$
+
+//load powershell scripts
+Set-ExecutionPolicy Bypass
+. .\GEt-NetLocalGroup.ps1
+Get-NetLocalGroup -ComputerName hostname
