@@ -5,3 +5,6 @@ dir \\IP-ADDRESSS-OR-HOST\C$
 Set-ExecutionPolicy Bypass
 . .\GEt-NetLocalGroup.ps1
 Get-NetLocalGroup -ComputerName hostname
+
+//search files on windows quickly
+https://sourceforge.net/projects/ntfs-search/
