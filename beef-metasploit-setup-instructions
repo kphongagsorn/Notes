@@ -1,0 +1,18 @@
+## Metasploit
+Using msf/msf for username and password:
+* sudo msfdb init
+* msfconsole
+* load msgrpc ServerHost=127.0.0.1 User=msf Pass=msf SSL=y
+
+## Beef
+Enable metasploit in:
+/usr/share/beef-xss/config.yaml 
+/usr/share/beef-xss/extensions/metasploit/config.yaml
+
+Then run beef:
+./beef
+
+
+### Ref
+* https://vk9-sec.com/introduction-hacking-with-beef/
+* https://nullsec.us/integrating-beef-and-metasploit/
